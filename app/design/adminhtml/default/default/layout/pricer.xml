@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <pricer_adminhtml_pricerbackend_index>
+	<reference name="content">
+	  <block type="pricer/adminhtml_pricerbackend" name="pricerbackend" template="pricer/pricerbackend.phtml"/>
+	</reference>
+  </pricer_adminhtml_pricerbackend_index>
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+    <name>AbsoluteWeb_Pricer</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/GPL-3.0">GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Absolute Web Solution is an intelligent retail solution that works on price comparison between different competitors. It helps you grow by expanding your online presence comparing price with different competitors.&#xD;
+&#xD;
+Automatically track yours and your competitor prices also automatically change your prices to match, beat or set specific rules to automatically changes your prices to exact penny.</summary>
+    <description>Absolute Web Solution is an intelligent retail solution that works on price comparison between different competitors. It helps you grow by expanding your online presence comparing price with different competitors.&#xD;
+&#xD;
+With Absolute Web Solution, you can easily connect your Magento products with our server &amp; our server will compare your products with different competitors and provide competitive price.&#xD;
+&#xD;
+The platform has deep integrations with many of the most popular online marketplaces and services, such as Amazon, eBay.  If you have any custom web base competitors then our server will compare price with them as well.&#xD;
+&#xD;
+You have to only pay for the number of prices you check and a number of competitors you compare complete flexibility!&#xD;
+&#xD;
+Automatically track yours and your competitor prices also automatically change your prices to match, beat or set specific rules to automatically changes your prices to exact penny.&#xD;
+&#xD;
+Provides detailed reports on all of your products pricing, how may products are too expensive, how many are too cheap and what you should do to be competitive.&#xD;
+&#xD;
+Help keep your product prices competitive, resulting in more sales, resulting in more revenue.&#xD;
+&#xD;
+Full automation means no manual price monitoring needed, more time to focus on other areas.</description>
+    <notes>It's a stable release of extension. We have tested with different version of Magento &amp; work well.&#xD;
+</notes>
+    <authors><author><name>Absolute MKTG</name><user>AbsolutePricing</user><email>info@absolutemarketing.co</email></author></authors>
+    <date>2016-01-28</date>
+    <time>09:30:13</time>
+    <contents><target name="magecommunity"><dir name="AbsoluteWeb"><dir name="Pricer"><dir name="Block"><dir name="Adminhtml"><file name="Pricerbackend.php" hash="c221193a7c60810cff32f0e1dbee98db"/></dir></dir><dir name="Helper"><file name="Data.php" hash="10a429a351ac0d015008aa7453795c9c"/></dir><dir name="Model"><file name="Credentials.php" hash="4bfb82c0a1e61db319561b6938bf9df0"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PricerbackendController.php" hash="9a49cbd7e1c8522a3a49aec028e1b359"/></dir></dir><dir name="etc"><file name="config.xml" hash="68bc775ae7142a48271d0507fe47c608"/></dir><dir name="sql"><dir name="pricer_setup"><file name="mysql4-install-0.1.0.php" hash="7815cb7d8152bf57b962366c16c579f7"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="pricer"><file name="pricerbackend.phtml" hash="fd9599d9ea33da19655d566c0fb1bb7f"/></dir></dir><dir name="layout"><file name="pricer.xml" hash="d67c4b513c4d72a035d0c745ebabd494"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="AbsoluteWeb_Pricer.xml" hash="bee2bba470b523ddb300b76ebc6abc95"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

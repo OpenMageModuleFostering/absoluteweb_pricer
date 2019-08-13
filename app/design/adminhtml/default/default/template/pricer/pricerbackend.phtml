@@ -1,0 +1,45 @@
+<?php
+/**
+ * @var AbsoluteWeb_Pricer_Block_Adminhtml_Pricerbackend $this
+ */
+?>
+<?php if(!$this->isSupportedVersion()) : ?>
+  <div class="box">
+    <div>
+        <a href="http://www.absolutewebsolution.co.uk" target="_blank"><img src="http://www.absolutewebsolution.co.uk/wp-content/uploads/2016/01/absolutesolutions.jpg" height='80' alt="AbsoluteWebSolution" title="AbsoluteWebSolution" /></a><br>
+
+        <br>
+        <h2 style='color: red'>Sorry, but we don't currently support your Magento version.</h2>
+        <b>Your Magento Version:</b> <code><?php echo $this->getMagentoVersion(); ?></code><br>
+        <b>Supported Versions:</b> <code><?php echo $this->getMinVersion(); ?> - <?php echo $this->getMaxVersion(); ?></code><br><br>
+
+        We are working hard to add support for more versions. So stay tuned!
+
+        <div style='clear: both;'></div>
+
+    </div>
+  </div>
+<?php else : ?>
+    <div class="box">
+        <div>
+             <a href="http://www.absolutewebsolution.co.uk" target="_blank"><img src="http://www.absolutewebsolution.co.uk/wp-content/uploads/2016/01/absolutesolutions.jpg" height='80' alt="AbsoluteWebSolution" title="AbsoluteWebSolution" /></a><br>
+
+            <fieldset>
+                <h2>REST API Credentials</h2>
+                <b>Consumer Key:</b> <code><?php echo $this->getConsumerKey(); ?></code><br><br>
+                <b>Consumer Secret:</b> <code><?php echo $this->getConsumerSecret(); ?></code><br><br>
+                <b>Access Token:</b> <code><?php echo $this->getAccessToken(); ?></code><br><br>
+                <b>Access Secret:</b> <code><?php echo $this->getAccessSecret(); ?></code><br><br>
+            </fieldset>
+             <fieldset>
+                <h2>SOAP API Credentials</h2>
+                <b>Api User:</b> <code><?php echo $this->getSoapUser(); ?></code><br><br>
+                <b>API Key:</b> <code><?php echo $this->getApiKey(); ?></code><br><br>
+            </fieldset>
+            <a target="_blank"  href="http://www.absolutewebsolution.co.uk/dashboard/" style='display: inline-block; color: white; border-radius: 5px; padding: 10px 20px; background: #6fcc37; -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); font-weight: bold; font-size: 14px; text-decoration: none;' onmouseover="this.style.cursor='pointer'">Connect to Absolute Web Solution</a>
+            <div style='clear: both;'></div>
+
+        </div>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <AbsoluteWeb_Pricer>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>0.1.0</version>
+    </AbsoluteWeb_Pricer>
+  </modules>
+</config>

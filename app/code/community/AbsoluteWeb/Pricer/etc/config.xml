@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <AbsoluteWeb_Pricer>
+      <version>0.1.0</version>
+    </AbsoluteWeb_Pricer>
+  </modules>
+  <global>
+    <helpers>
+      <pricer>
+        <class>AbsoluteWeb_Pricer_Helper</class>
+      </pricer>
+    </helpers>
+   <models>
+        <absoluteweb_pricer>
+            <class>AbsoluteWeb_Pricer_Model</class> 
+        </absoluteweb_pricer>
+    </models>
+	<blocks>
+	  <pricer>
+		<class>AbsoluteWeb_Pricer_Block</class>
+	  </pricer>
+	</blocks>
+	<resources>
+	  <pricer_setup>
+		<setup> 
+		  <module>AbsoluteWeb_Pricer</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </pricer_setup>
+	  <pricer_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </pricer_write>
+	  <pricer_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </pricer_read>
+	</resources>
+  </global>
+  <admin>
+	<routers>
+	  <pricer>
+	    <use>admin</use>
+		<args>
+		  <module>AbsoluteWeb_Pricer</module>
+		  <frontName>admin_pricer</frontName>
+		</args>
+	  </pricer>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <pricer module="pricer">
+		<title>Absolute Solution</title>
+		<sort_order>70</sort_order>
+		<children>
+		  <pricerbackend module="pricer">
+			<title>API Credentials</title>
+			<sort_order>0</sort_order>
+			<action>admin_pricer/adminhtml_pricerbackend</action>
+		  </pricerbackend>
+		</children>
+	  </pricer>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<pricer translate="title" module="pricer">
+			  <title>Absolute Solution</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <pricerbackend translate="title">
+			<title>API Credentials</title>
+		  </pricerbackend>
+			  </children>
+			</pricer>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<pricer>
+		  <file>pricer.xml</file>
+		</pricer>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 
